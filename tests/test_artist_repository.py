@@ -7,7 +7,7 @@ We get a list of Artist objects reflecting the seed data.
 """
 def test_get_all_records(db_connection): # See conftest.py to learn what `db_connection` is.
     db_connection.seed("seeds/music_library.sql") # Seed our database with some test data
-    repository = ArtistRepository(db_connection) # Create a new ArtistRepository
+    repository = ArtistRepository(db_connection) # Create a new ArtistRepository    
 
     artists = repository.all() # Get all artists
 
